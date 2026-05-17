@@ -3,25 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="curriculum, cv, estudiante">
-    <meta name="description" content="Currículum Vitae Digital">
-    <meta name="author" content="Pablo Chacón">
+    <meta name="keywords" content="curriculum, cv, estudiante, ingenieria en computacion, espol, pablo chacon, desarrollador, ui/ux">
+    <meta name="description" content="Currículum Vitae Digital de Pablo Andrés Chacón Campoverde - Estudiante de Ingeniería en Computación">
+    <meta name="author" content="Pablo Andrés Chacón Campoverde">
 
-    <title>Currículum Vitae</title>
+    <title>Currículum Vitae - Pablo Andrés Chacón</title>
+
+    <style>
+        /* Estilos Generales y Tipografía */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #f7fafc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado Principal */
+        header {
+            background: linear-gradient(135deg, #2b6cb0, #4299e1);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        /* Barra de Navegación */
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            color: #2b6cb0;
+            background-color: #ebf8ff;
+        }
+
+        /* Contenedor Principal */
+        main {
+            max-width: 850px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Secciones Estilo Tarjeta */
+        section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.04);
+            border-left: 5px solid #4299e1;
+        }
+
+        section h2 {
+            color: #2b6cb0;
+            margin-top: 0;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        /* Listas Estilizadas */
+        ul {
+            padding-left: 1.25rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Bloques de Experiencia y Proyectos */
+        article {
+            margin-bottom: 1.75rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+
+        article:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        article h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2d3748;
+            font-size: 1.2rem;
+        }
+
+        article h3 span {
+            display: block;
+            font-size: 0.95rem;
+            color: #718096;
+            font-weight: normal;
+            margin-top: 0.25rem;
+        }
+
+        /* Enlaces e Información de Contacto */
+        a {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #contacto p {
+            margin: 0.5rem 0;
+        }
+
+        /* Pie de Página */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #a0aec0;
+            font-size: 0.85rem;
+            background-color: #edf2f7;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Pablo Chacón</h1>
-        <p>Estudiante de Desarrollo de Software</p>
+        <h1>Pablo Andrés Chacón Campoverde</h1>
+        <p>Estudiante de Ingeniería en Computación</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#perfil">Perfil</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#idiomas">Idiomas</a></li>
+            <li><a href="#educacion">Formación</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -32,48 +184,94 @@
         <section id="perfil">
             <h2>Perfil Profesional</h2>
             <p>
-                Estudiante interesado en programación,
-                desarrollo web y bases de datos.
+                Estudiante de Ingeniería en Computación con habilidades en programación (Java, Python) 
+                y manejo de bases de datos (MySQL). He desarrollado proyectos basados en Estructura de 
+                Datos, Diseño de Software, Desarrollo móvil en Android Studio y prototipado UI/UX en Figma 
+                enfocándose en la eficiencia del código y la experiencia del usuario. Soy una persona 
+                analítica, proactiva y en constante aprendizaje de nuevas tecnologías para la resolución de 
+                problemas técnicos.
             </p>
         </section>
 
-        <section id="educacion">
-            <h2>Educación</h2>
+        <section id="idiomas">
+            <h2>Idiomas</h2>
             <ul>
-                <li>Bachillerato completo</li>
-                <li>Universidad - Desarrollo de Software</li>
+                <li><strong>Español:</strong> Nativo</li>
+                <li><strong>Inglés:</strong> Nativo</li>
+                <li><strong>Alemán:</strong> Básico</li>
             </ul>
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
+        <section id="educacion">
+            <h2>Formación</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>MySQL</li>
+                <li>
+                    <strong>Escuela Superior Politécnica del Litoral</strong><br>
+                    Ingeniero en Computación | <em>(2023 - Presente)</em>
+                </li>
+                <li>
+                    <strong>Colegio Americano de Guayaquil</strong><br>
+                    Segundo Nivel | <em>(2010 - 2023)</em>
+                </li>
             </ul>
         </section>
 
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <p>
-                Desarrollo de proyectos académicos
-                relacionados con programación y páginas web.
-            </p>
+            
+            <article>
+                <h3>Desarrollo de Software y Algoritmos (Proyectos Académicos) (2023 - Presente)
+                <span>Desarrollador Java / Estudiante de Ingeniería</span></h3>
+                <p>
+                    Diseño y ejecución de programas utilizando Programación Orientada a Objetos y 
+                    Estructuras de Datos en el entorno NetBeans. Implementación de lógica compleja 
+                    mediante algoritmos de búsqueda y ordenamiento para la resolución eficiente de 
+                    problemas técnicos.
+                </p>
+            </article>
+
+            <article>
+                <h3>Gestión de Sistemas de Bases de Datos (2023 - Presente)
+                <span>Analista de Datos Jr.</span></h3>
+                <p>
+                    Diseño, normalización y creación de esquemas de bases de datos utilizando MySQL. 
+                    Gestión de consultas SQL para el almacenamiento y recuperación de información, 
+                    asegurando la integridad de los datos en proyectos de software.
+                </p>
+            </article>
+
+            <article>
+                <h3>Diseño de Software e Interacción (2023 - Presente)
+                <span>Diseñador de Software / Especialista en HCI</span></h3>
+                <p>
+                    Aplicación de patrones de diseño para la arquitectura de software escalable. 
+                    Creación de prototipos y análisis de interfaces bajo principios de Interacción 
+                    Humano-Computador, enfocados en mejorar la experiencia del usuario (UX) y la 
+                    usabilidad del sistema.
+                </p>
+            </article>
+
+            <article>
+                <h3>Análisis de Sistemas y Computación (2023)
+                <span>Investigador Técnico</span></h3>
+                <p>
+                    Análisis del impacto de la tecnología en la sociedad y evaluación ética del desarrollo 
+                    de software. Aplicación de pensamiento crítico para la resolución de problemas 
+                    sociotécnicos en el ámbito de la ingeniería.
+                </p>
+            </article>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Email: ejemplo@gmail.com</p>
-            <p>Teléfono: 0999999999</p>
+            <p><strong>Email:</strong> <a href="mailto:pachacon@espol.edu.ec">pachacon@espol.edu.ec</a></p>
+            <p><strong>Teléfono:</strong> +593 9592 77302</p>
         </section>
 
     </main>
 
     <footer>
-        <p>2026 - Currículum Vitae</p>
+        <p>&copy; 2026 - Currículum Vitae Digital | Pablo Chacón</p>
     </footer>
 
 </body>
