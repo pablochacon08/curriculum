@@ -456,6 +456,97 @@
                 <strong>Teléfono:</strong>
                 +593 959277302
             </p>
+    <h2>Formulario de Contacto</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>Información de Contacto</legend>
+
+            <!-- Nombre -->
+
+            <label for="nombre">
+                Nombre:
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingrese su nombre"
+                required>
+
+            <br><br>
+
+            <!-- Correo -->
+
+            <label for="correo">
+                Correo Electrónico:
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@email.com"
+                required>
+
+            <br><br>
+
+            <!-- Tipo de contacto -->
+
+            <label for="motivo">
+                Motivo:
+            </label>
+
+            <select id="motivo" name="motivo">
+
+                <option value="trabajo">
+                    Oferta laboral
+                </option>
+
+                <option value="proyecto">
+                    Proyecto
+                </option>
+
+                <option value="consulta">
+                    Consulta
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <!-- Mensaje -->
+
+            <label for="mensaje">
+                Mensaje:
+            </label>
+
+            <br>
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                cols="40"
+                placeholder="Escriba su mensaje">
+            </textarea>
+
+            <br><br>
+
+            <!-- Botón -->
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </fieldset>
+
+    </form>
+
+</section>
 
         </section>
 
