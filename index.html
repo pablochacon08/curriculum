@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="curriculum, cv, estudiante, ingenieria en computacion, espol, pablo chacon, desarrollador, ui/ux">
-    <meta name="description" content="Currículum Vitae Digital de Pablo Andrés Chacón Campoverde - Estudiante de Ingeniería en Computación">
+
+    <!-- Metadatos -->
+    <meta name="keywords" content="curriculum, cv, estudiante, ingenieria en computacion, espol, desarrollador, ui/ux">
+    <meta name="description" content="Currículum Vitae Digital de Pablo Andrés Chacón Campoverde">
     <meta name="author" content="Pablo Andrés Chacón Campoverde">
 
     <title>Currículum Vitae - Pablo Andrés Chacón</title>
 
     <style>
-        /* Estilos Generales y Tipografía */
+
+        /* ===== ESTILOS GENERALES ===== */
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -20,10 +24,11 @@
             padding: 0;
         }
 
-        /* Encabezado Principal */
+        /* ===== HEADER ===== */
+
         header {
             background: linear-gradient(135deg, #2b6cb0, #4299e1);
-            color: #ffffff;
+            color: white;
             text-align: center;
             padding: 3rem 1rem;
         }
@@ -31,170 +36,223 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
         }
 
         header p {
-            margin: 0.5rem 0 0 0;
-            font-size: 1.25rem;
-            opacity: 0.9;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
         }
 
-        /* Barra de Navegación */
+        /* ===== NAV ===== */
+
         nav {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            background-color: white;
             position: sticky;
             top: 0;
-            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin: 0;
             padding: 0;
-            flex-wrap: wrap;
         }
 
         nav ul li a {
             display: block;
             padding: 1rem 1.5rem;
-            color: #4a5568;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.2s ease, background-color 0.2s ease;
+            color: #2d3748;
+            font-weight: bold;
+            transition: 0.2s;
         }
 
         nav ul li a:hover {
-            color: #2b6cb0;
             background-color: #ebf8ff;
+            color: #2b6cb0;
         }
 
-        /* Contenedor Principal */
+        /* ===== MAIN ===== */
+
         main {
-            max-width: 850px;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
 
-        /* Secciones Estilo Tarjeta */
+        /* ===== SECTIONS ===== */
+
         section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 2rem;
+            background-color: white;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.04);
+            padding: 2rem;
+            border-radius: 10px;
             border-left: 5px solid #4299e1;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
         }
 
         section h2 {
             color: #2b6cb0;
-            margin-top: 0;
             border-bottom: 2px solid #edf2f7;
             padding-bottom: 0.5rem;
-            font-size: 1.5rem;
         }
 
-        /* Listas Estilizadas */
-        ul {
-            padding-left: 1.25rem;
-        }
+        /* ===== ARTICLES ===== */
 
-        li {
-            margin-bottom: 0.75rem;
-        }
-
-        /* Bloques de Experiencia y Proyectos */
         article {
-            margin-bottom: 1.75rem;
-            padding-bottom: 1.25rem;
-            border-bottom: 1px dashed #e2e8f0;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #cbd5e0;
         }
 
         article:last-of-type {
             border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
         }
 
         article h3 {
-            margin: 0 0 0.5rem 0;
-            color: #2d3748;
-            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
         }
 
         article h3 span {
             display: block;
-            font-size: 0.95rem;
             color: #718096;
+            font-size: 0.95rem;
             font-weight: normal;
-            margin-top: 0.25rem;
         }
 
-        /* Enlaces e Información de Contacto */
+        /* ===== LISTAS ===== */
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* ===== TABLA ===== */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+
+        caption {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: #4a5568;
+        }
+
+        /* ===== BLOCKQUOTE ===== */
+
+        blockquote {
+            font-style: italic;
+            color: #4a5568;
+            border-left: 4px solid #4299e1;
+            padding-left: 1rem;
+            margin-left: 0;
+        }
+
+        /* ===== LINKS ===== */
+
         a {
             color: #3182ce;
             text-decoration: none;
-            font-weight: 600;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        #contacto p {
-            margin: 0.5rem 0;
-        }
+        /* ===== FOOTER ===== */
 
-        /* Pie de Página */
         footer {
             text-align: center;
-            padding: 2rem 1rem;
-            color: #a0aec0;
-            font-size: 0.85rem;
+            padding: 2rem;
             background-color: #edf2f7;
-            margin-top: 4rem;
+            color: #718096;
+            margin-top: 3rem;
         }
+
     </style>
 </head>
 
 <body>
+
+    <!-- ===== HEADER ===== -->
 
     <header>
         <h1>Pablo Andrés Chacón Campoverde</h1>
         <p>Estudiante de Ingeniería en Computación</p>
     </header>
 
+    <!-- ===== NAV ===== -->
+
     <nav>
         <ul>
             <li><a href="#perfil">Perfil</a></li>
             <li><a href="#idiomas">Idiomas</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#educacion">Formación</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
+    <!-- ===== MAIN ===== -->
+
     <main>
+
+        <!-- PERFIL -->
 
         <section id="perfil">
             <h2>Perfil Profesional</h2>
+
             <p>
-                Estudiante de Ingeniería en Computación con habilidades en programación (Java, Python) 
-                y manejo de bases de datos (MySQL). He desarrollado proyectos basados en Estructura de 
-                Datos, Diseño de Software, Desarrollo móvil en Android Studio y prototipado UI/UX en Figma 
-                enfocándose en la eficiencia del código y la experiencia del usuario. Soy una persona 
-                analítica, proactiva y en constante aprendizaje de nuevas tecnologías para la resolución de 
-                problemas técnicos.
+                Estudiante de <strong>Ingeniería en Computación</strong> con habilidades en 
+                programación, desarrollo de software y diseño de interfaces UI/UX.
+            </p>
+
+            <p>
+                Tengo experiencia académica en <strong>Java</strong>, 
+                <strong>Python</strong>, <strong>MySQL</strong>, 
+                Android Studio y prototipado en <strong>Figma</strong>.
+            </p>
+
+            <p>
+                Puedes visitar mi perfil profesional en
+                <a href="https://www.linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>.
             </p>
         </section>
 
+        <!-- IDIOMAS -->
+
         <section id="idiomas">
             <h2>Idiomas</h2>
+
             <ul>
                 <li><strong>Español:</strong> Nativo</li>
                 <li><strong>Inglés:</strong> Nativo</li>
@@ -202,13 +260,32 @@
             </ul>
         </section>
 
+        <!-- HABILIDADES -->
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>Android Studio</li>
+                <li>Figma</li>
+                <li>HTML5 y CSS3</li>
+            </ul>
+        </section>
+
+        <!-- EDUCACION -->
+
         <section id="educacion">
             <h2>Formación</h2>
+
             <ul>
                 <li>
                     <strong>Escuela Superior Politécnica del Litoral</strong><br>
-                    Ingeniero en Computación | <em>(2023 - Presente)</em>
+                    Ingeniería en Computación | <em>(2023 - Presente)</em>
                 </li>
+
                 <li>
                     <strong>Colegio Americano de Guayaquil</strong><br>
                     Segundo Nivel | <em>(2010 - 2023)</em>
@@ -216,62 +293,180 @@
             </ul>
         </section>
 
+        <!-- EXPERIENCIA -->
+
         <section id="experiencia">
+
             <h2>Experiencia</h2>
-            
+
             <article>
-                <h3>Desarrollo de Software y Algoritmos (Proyectos Académicos) (2023 - Presente)
-                <span>Desarrollador Java / Estudiante de Ingeniería</span></h3>
+                <h3>
+                    Desarrollo de Software y Algoritmos
+                    <span>Desarrollador Java / Estudiante de Ingeniería</span>
+                </h3>
+
                 <p>
-                    Diseño y ejecución de programas utilizando Programación Orientada a Objetos y 
-                    Estructuras de Datos en el entorno NetBeans. Implementación de lógica compleja 
-                    mediante algoritmos de búsqueda y ordenamiento para la resolución eficiente de 
-                    problemas técnicos.
+                    Diseño y desarrollo de programas utilizando Programación 
+                    Orientada a Objetos y estructuras de datos.
                 </p>
             </article>
 
             <article>
-                <h3>Gestión de Sistemas de Bases de Datos (2023 - Presente)
-                <span>Analista de Datos Jr.</span></h3>
+                <h3>
+                    Gestión de Bases de Datos
+                    <span>Analista de Datos Jr.</span>
+                </h3>
+
                 <p>
-                    Diseño, normalización y creación de esquemas de bases de datos utilizando MySQL. 
-                    Gestión de consultas SQL para el almacenamiento y recuperación de información, 
-                    asegurando la integridad de los datos en proyectos de software.
+                    Diseño y normalización de bases de datos utilizando MySQL.
                 </p>
             </article>
 
             <article>
-                <h3>Diseño de Software e Interacción (2023 - Presente)
-                <span>Diseñador de Software / Especialista en HCI</span></h3>
+                <h3>
+                    Diseño de Software e Interfaces
+                    <span>Diseñador UI/UX</span>
+                </h3>
+
                 <p>
-                    Aplicación de patrones de diseño para la arquitectura de software escalable. 
-                    Creación de prototipos y análisis de interfaces bajo principios de Interacción 
-                    Humano-Computador, enfocados en mejorar la experiencia del usuario (UX) y la 
-                    usabilidad del sistema.
+                    Creación de prototipos interactivos y análisis de experiencia 
+                    de usuario utilizando Figma.
                 </p>
             </article>
 
-            <article>
-                <h3>Análisis de Sistemas y Computación (2023)
-                <span>Investigador Técnico</span></h3>
-                <p>
-                    Análisis del impacto de la tecnología en la sociedad y evaluación ética del desarrollo 
-                    de software. Aplicación de pensamiento crítico para la resolución de problemas 
-                    sociotécnicos en el ámbito de la ingeniería.
-                </p>
-            </article>
         </section>
 
+        <!-- PROCESO -->
+
+        <section id="proceso">
+
+            <h2>Proceso de Desarrollo de Software</h2>
+
+            <ol>
+                <li>Análisis de requerimientos</li>
+                <li>Diseño de la solución</li>
+                <li>Implementación del sistema</li>
+                <li>Pruebas y validación</li>
+                <li>Entrega del proyecto</li>
+            </ol>
+
+        </section>
+
+        <!-- TABLA -->
+
+        <section id="tecnologias">
+
+            <h2>Tecnologías y Nivel de Conocimiento</h2>
+
+            <table>
+
+                <caption>
+                    Herramientas utilizadas en proyectos académicos
+                </caption>
+
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Nivel</th>
+                    <th>Área</th>
+                </tr>
+
+                <tr>
+                    <th>Java</th>
+                    <td>Intermedio</td>
+                    <td>POO y Algoritmos</td>
+                </tr>
+
+                <tr>
+                    <th>Python</th>
+                    <td>Intermedio</td>
+                    <td>Automatización</td>
+                </tr>
+
+                <tr>
+                    <th>MySQL</th>
+                    <td>Básico - Intermedio</td>
+                    <td>Bases de Datos</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- TESTIMONIOS -->
+
+        <section id="testimonios">
+
+            <h2>Testimonios</h2>
+
+            <article>
+
+                <blockquote>
+                    “Pablo demostró gran capacidad analítica y responsabilidad.”
+                </blockquote>
+
+                <p>
+                    <strong>María Fernanda López</strong> — Líder de Desarrollo.
+                    Destacó por su compromiso y habilidades técnicas.
+                </p>
+
+            </article>
+
+            <article>
+
+                <blockquote>
+                    “Su creatividad mejoró notablemente la experiencia de usuario.”
+                </blockquote>
+
+                <p>
+                    <strong>Carlos Andrade</strong> — Diseñador UI/UX Senior.
+                    Participó en proyectos de prototipado y diseño interactivo.
+                </p>
+
+            </article>
+
+            <article>
+
+                <blockquote>
+                    “Siempre mostró iniciativa para aprender nuevas tecnologías.”
+                </blockquote>
+
+                <p>
+                    <strong>Ana Rodríguez</strong> — Analista de Bases de Datos.
+                    Colaboró en proyectos relacionados con MySQL.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- CONTACTO -->
+
         <section id="contacto">
+
             <h2>Contacto</h2>
-            <p><strong>Email:</strong> <a href="mailto:pachacon@espol.edu.ec">pachacon@espol.edu.ec</a></p>
-            <p><strong>Teléfono:</strong> +593 9592 77302</p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:pachacon@espol.edu.ec">
+                    pachacon@espol.edu.ec
+                </a>
+            </p>
+
+            <p>
+                <strong>Teléfono:</strong>
+                +593 959277302
+            </p>
+
         </section>
 
     </main>
 
+    <!-- FOOTER -->
+
     <footer>
-        <p>&copy; 2026 - Currículum Vitae Digital | Pablo Chacón</p>
+        <p>
+            &copy; 2026 - Currículum Vitae Digital | Pablo Chacón
+        </p>
     </footer>
 
 </body>
