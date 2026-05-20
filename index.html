@@ -6,80 +6,8 @@
   <meta name="description" content="Currículum vitae de Pablo Andrés Chacón Campoverde, estudiante de Ingeniería en Computación en ESPOL." />
   <meta name="keywords" content="Pablo Chacón, Ingeniería en Computación, ESPOL, Java, MySQL, Python" />
   <meta name="author" content="Pablo Andrés Chacón Campoverde" />
+  <link rel="stylesheet" href="stylesheets/style.css">
   <title>Pablo Chacón - Currículum Vitae</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      color: #000;
-      background-color: #fff;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 15px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 8px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #000;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      margin-top: 20px;
-    }
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 4px;
-      margin-top: 30px;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    th, td {
-      padding: 6px 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f0f0f0;
-    }
-    img {
-      display: block;
-      margin: 10px 0;
-    }
-    iframe {
-      display: block;
-      margin: 10px 0;
-    }
-    form label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    form input[type="text"],
-    form input[type="email"],
-    form select,
-    form textarea {
-      width: 100%;
-      padding: 6px;
-      margin-top: 4px;
-      box-sizing: border-box;
-    }
-    form button {
-      margin-top: 15px;
-      padding: 8px 20px;
-    }
-    article {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 
 <body>
@@ -101,7 +29,7 @@
 
   <!-- Encabezado -->
   <header>
-    <img src="foto.jpg" alt="Foto de Pablo Andrés Chacón Campoverde" width="150" />
+    <img id="photo" src="foto.jpg" alt="Foto de Pablo Andrés Chacón Campoverde" width="150" />
     <h1>Pablo Andrés Chacón Campoverde</h1>
     <p>Estudiante de Ingeniería en Computación - ESPOL</p>
     <p>pachacon@espol.edu.ec | +593 9592 77302 | Guayaquil, Ecuador</p>
@@ -112,7 +40,7 @@
 
     <!-- Sección 1: Sobre mí -->
     <section id="sobre-mi">
-      <h2>Sobre mí</h2>
+      <h2 class="subtitle">Sobre mí</h2>
       <p>
         Estudiante de Ingeniería en Computación en la
         <a href="https://www.espol.edu.ec" target="_blank">Escuela Superior Politécnica del Litoral (ESPOL)</a>.
@@ -124,7 +52,7 @@
 
     <!-- Sección 2: Experiencia -->
     <section id="experiencia">
-      <h2>Experiencia</h2>
+      <h2 class="subtitle">Experiencia</h2>
 
       <h3>Desarrollo de Software y Algoritmos (2023 - Presente)</h3>
       <p><em>Desarrollador Java / Estudiante de Ingeniería</em></p>
@@ -145,7 +73,7 @@
 
     <!-- Sección 3: Formación -->
     <section id="formacion">
-      <h2>Formación</h2>
+      <h2 class="subtitle">Formación</h2>
 
       <p><strong>Ingeniero en Computación</strong> - Escuela Superior Politécnica del Litoral (ESPOL) - 2023 a la actualidad</p>
       <p><strong>Bachillerato</strong> - Colegio Americano de Guayaquil - 2010 a 2023</p>
@@ -153,7 +81,7 @@
 
     <!-- Sección 4: Habilidades -->
     <section id="habilidades">
-      <h2>Habilidades Técnicas</h2>
+      <h2 class="subtitle">Habilidades Técnicas</h2>
 
       <p>Principales tecnologías que manejo:</p>
       <ul>
@@ -206,7 +134,7 @@
 
     <!-- Sección 5: Idiomas -->
     <section id="idiomas">
-      <h2>Idiomas</h2>
+      <h2 class="subtitle">Idiomas</h2>
       <ul>
         <li>Español - Nativo</li>
         <li>Inglés - Nativo</li>
@@ -216,7 +144,7 @@
 
     <!-- Sección 6: Proyectos -->
     <section id="proyectos">
-      <h2>Proyectos Destacados</h2>
+      <h2 class="subtitle">Proyectos Destacados</h2>
 
       <h3>Sistema de Gestión con Estructuras de Datos</h3>
       <p>Java · NetBeans · POO</p>
@@ -233,7 +161,7 @@
 
     <!-- Sección 7: Testimonios (etiquetas contenedoras) -->
     <section id="testimonios">
-      <h2>Testimonios</h2>
+      <h2 class="subtitle">Testimonios</h2>
 
       <article>
         <blockquote>Pablo demostró una gran capacidad para resolver problemas complejos de algoritmos con una metodología clara y eficiente.</blockquote>
@@ -256,7 +184,7 @@
 
     <!-- Sección 8: Multimedia -->
     <section id="multimedia">
-      <h2>Multimedia</h2>
+      <h2 class="subtitle">Multimedia</h2>
 
       <h3>Ubicación - ESPOL, Guayaquil</h3>
       <iframe
@@ -285,7 +213,7 @@
 
     <!-- Sección 9: Contacto / Formulario -->
     <section id="contacto">
-      <h2>Contacto</h2>
+      <h2 class="subtitle">Contacto</h2>
       <p>Si tienes alguna propuesta o quieres conectar, completa el formulario:</p>
 
       <form action="#" method="post">

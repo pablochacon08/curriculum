@@ -1,0 +1,20 @@
+body { 
+    background-color: lightblue; 
+    font-family: 'Verdana', sans-serif; 
+} 
+
+h1 { 
+    color: purple; 
+    font-size: 3em; 
+    text-align: right; 
+} 
+
+p { 
+    border: 1px solid gray; 
+    padding: 10px; 
+} 
+
+.destacado { 
+    font-weight: bold; 
+    color: orange; 
+} 
