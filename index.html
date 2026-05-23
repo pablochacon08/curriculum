@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Currículum vitae de Pablo Andrés Chacón Campoverde, estudiante de Ingeniería en Computación en ESPOL." />
-  <meta name="keywords" content="Pablo Chacón, Ingeniería en Computación, ESPOL, Java, MySQL, Python" />
+  <meta name="description" content="Currículum vitae digital de Pablo Andrés Chacón Campoverde, Estudiante de Ingeniería en Computación en ESPOL." />
+  <meta name="keywords" content="Pablo Chacón, Ingeniería en Computación, ESPOL, Java, MySQL, Python, desarrollador, currículum" />
   <meta name="author" content="Pablo Andrés Chacón Campoverde" />
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <title>Pablo Chacón - Currículum Vitae</title>
+  <title>Pablo Chacón | Currículum Vitae</title>
+  <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 
 <body>
 
-  <!-- Navegación -->
+  <!-- ── NAVEGACIÓN ── -->
   <nav>
     <ul>
       <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -27,238 +27,408 @@
     </ul>
   </nav>
 
-  <!-- Encabezado -->
+  <!-- ── ENCABEZADO ── -->
   <header>
-    <img id="photo" src="foto.jpg" alt="Foto de Pablo Andrés Chacón Campoverde" width="150" />
-    <h1>Pablo Andrés Chacón Campoverde</h1>
-    <p>Estudiante de Ingeniería en Computación - ESPOL</p>
-    <p>pachacon@espol.edu.ec | +593 9592 77302 | Guayaquil, Ecuador</p>
+    <div class="header-inner">
+      <img
+        class="profile-photo" id="photo"
+        src="https://picsum.photos/seed/pablo/280/280"
+        alt="Foto de perfil de Pablo Andrés Chacón Campoverde"
+      />
+      <h1>Pablo Andrés Chacón Campoverde</h1>
+      <p class="header-subtitle">Estudiante de Ingeniería en Computación · ESPOL</p>
+      <p class="header-bio">
+        Estudiante de Ingeniería en Computación con habilidades en programación (Java, Python)
+        y manejo de bases de datos (MySQL). He desarrollado proyectos basados en Estructura de Datos,
+        Diseño de Software, Desarrollo móvil en Android Studio y prototipado UI/UX en Figma,
+        enfocándome en la eficiencia del código y la experiencia del usuario.
+        Soy una persona analítica, proactiva y en constante aprendizaje de nuevas tecnologías.
+      </p>
+      <div class="contact-bar">
+        <span>📧 <a href="mailto:pachacon@espol.edu.ec">pachacon@espol.edu.ec</a></span>
+        <span>📞 +593 9592 77302</span>
+        <span>📍 Guayaquil, Ecuador</span>
+      </div>
+    </div>
   </header>
 
-  <!-- Contenido principal -->
+  <!-- ── CONTENIDO PRINCIPAL ── -->
   <main>
 
-    <!-- Sección 1: Sobre mí -->
+    <!-- SECCIÓN 1: Sobre mí -->
     <section id="sobre-mi">
-      <h2 class="subtitle">Sobre mí</h2>
+      <h2 class="subtitle"><span class="icon">👤</span> Sobre mí</h2>
       <p>
-        Estudiante de Ingeniería en Computación en la
-        <a href="https://www.espol.edu.ec" target="_blank">Escuela Superior Politécnica del Litoral (ESPOL)</a>.
-        Tengo habilidades en programación con Java y Python, manejo de bases de datos con MySQL,
-        desarrollo móvil en Android Studio y prototipado UI/UX en Figma. Soy una persona analítica,
-        proactiva y en constante aprendizaje de nuevas tecnologías.
+        Soy estudiante de <strong>Ingeniería en Computación</strong> en la
+        <a href="https://www.espol.edu.ec" target="_blank" rel="noopener noreferrer">Escuela Superior Politécnica del Litoral (ESPOL)</a>,
+        con una sólida base en programación orientada a objetos, estructuras de datos y diseño de software.
+        Me apasiona crear soluciones tecnológicas eficientes y centradas en el usuario.
+      </p>
+      <br />
+      <p>
+        Mi enfoque combina pensamiento analítico con habilidades prácticas en desarrollo de software,
+        bases de datos y prototipado de interfaces, buscando siempre la mejora continua en cada proyecto.
       </p>
     </section>
 
-    <!-- Sección 2: Experiencia -->
-    <section id="experiencia">
-      <h2 class="subtitle">Experiencia</h2>
-
-      <h3>Desarrollo de Software y Algoritmos (2023 - Presente)</h3>
-      <p><em>Desarrollador Java / Estudiante de Ingeniería</em></p>
-      <p>Diseño y ejecución de programas utilizando Programación Orientada a Objetos y Estructuras de Datos en NetBeans. Implementación de algoritmos de búsqueda y ordenamiento.</p>
-
-      <h3>Gestión de Sistemas de Bases de Datos (2023 - Presente)</h3>
-      <p><em>Analista de Datos Jr.</em></p>
-      <p>Diseño, normalización y creación de esquemas de bases de datos con MySQL. Gestión de consultas SQL asegurando la integridad de los datos.</p>
-
-      <h3>Diseño de Software e Interacción (2023 - Presente)</h3>
-      <p><em>Diseñador de Software / Especialista en HCI</em></p>
-      <p>Aplicación de patrones de diseño para arquitectura de software escalable. Creación de prototipos bajo principios de Interacción Humano-Computador.</p>
-
-      <h3>Análisis de Sistemas y Computación (2023)</h3>
-      <p><em>Investigador Técnico</em></p>
-      <p>Análisis del impacto de la tecnología en la sociedad y evaluación ética del desarrollo de software.</p>
-    </section>
-
-    <!-- Sección 3: Formación -->
-    <section id="formacion">
-      <h2 class="subtitle">Formación</h2>
-
-      <p><strong>Ingeniero en Computación</strong> - Escuela Superior Politécnica del Litoral (ESPOL) - 2023 a la actualidad</p>
-      <p><strong>Bachillerato</strong> - Colegio Americano de Guayaquil - 2010 a 2023</p>
-    </section>
-
-    <!-- Sección 4: Habilidades -->
+    <!-- SECCIÓN 2: Habilidades técnicas -->
     <section id="habilidades">
-      <h2 class="subtitle">Habilidades Técnicas</h2>
+      <h2 class="subtitle"><span class="icon">⚙️</span> Habilidades Técnicas</h2>
 
-      <p>Principales tecnologías que manejo:</p>
-      <ul>
-        <li>Java</li>
-        <li>Python</li>
-        <li>MySQL</li>
-        <li>HTML5 y CSS3</li>
-        <li>Android Studio</li>
-        <li>Figma</li>
-        <li>Git y GitHub</li>
-      </ul>
+      <h3 style="margin-bottom:.6rem; color:var(--cyan); font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-family:var(--font-pixel);">Lenguajes y Tecnologías</h3>
+      <div class="skills-grid" style="margin-bottom:1.2rem;">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Android Studio</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">NetBeans</span>
+        <span class="skill-tag">VS Code</span>
+      </div>
 
-      <p>Competencias ordenadas por nivel de dominio:</p>
-      <ol>
+      <h3 style="margin-bottom:.6rem; color:var(--cyan); font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-family:var(--font-pixel);">Competencias principales (ordenadas por dominio)</h3>
+      <ol class="styled-ol">
         <li>Programación Orientada a Objetos y Estructuras de Datos</li>
-        <li>Diseño y normalización de bases de datos</li>
+        <li>Diseño y normalización de bases de datos relacionales</li>
         <li>Prototipado UI/UX y principios de HCI</li>
         <li>Desarrollo de aplicaciones móviles en Android Studio</li>
         <li>Versionamiento con Git y GitHub</li>
       </ol>
 
-      <h3>Comparativa de habilidades</h3>
+      <br />
+      <h3 style="margin-bottom:.6rem; color:var(--cyan); font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-family:var(--font-pixel);">Metodologías y buenas prácticas</h3>
+      <ul class="styled-ul">
+        <li>Patrones de diseño para arquitecturas escalables</li>
+        <li>Algoritmos de búsqueda y ordenamiento</li>
+        <li>Análisis ético del desarrollo de software</li>
+        <li>Resolución de problemas sociotécnicos</li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 3: Experiencia -->
+    <section id="experiencia" class="full-width">
+      <h2 class="subtitle"><span class="icon">💼</span> Experiencia</h2>
+
+      <div class="exp-item">
+        <p class="exp-meta">2023 – Presente</p>
+        <h3>Desarrollo de Software y Algoritmos (Proyectos Académicos)</h3>
+        <p class="exp-role">Desarrollador Java / Estudiante de Ingeniería</p>
+        <p class="exp-desc">
+          Diseño y ejecución de programas utilizando Programación Orientada a Objetos y Estructuras de Datos
+          en el entorno NetBeans. Implementación de lógica compleja mediante algoritmos de búsqueda y
+          ordenamiento para la resolución eficiente de problemas técnicos.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-meta">2023 – Presente</p>
+        <h3>Gestión de Sistemas de Bases de Datos</h3>
+        <p class="exp-role">Analista de Datos Jr.</p>
+        <p class="exp-desc">
+          Diseño, normalización y creación de esquemas de bases de datos utilizando MySQL.
+          Gestión de consultas SQL para el almacenamiento y recuperación de información,
+          asegurando la integridad de los datos en proyectos de software.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-meta">2023 – Presente</p>
+        <h3>Diseño de Software e Interacción</h3>
+        <p class="exp-role">Diseñador de Software / Especialista en HCI</p>
+        <p class="exp-desc">
+          Aplicación de patrones de diseño para la arquitectura de software escalable.
+          Creación de prototipos y análisis de interfaces bajo principios de Interacción
+          Humano-Computador, enfocados en mejorar la experiencia del usuario (UX) y la usabilidad del sistema.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-meta">2023</p>
+        <h3>Análisis de Sistemas y Computación</h3>
+        <p class="exp-role">Investigador Técnico</p>
+        <p class="exp-desc">
+          Análisis del impacto de la tecnología en la sociedad y evaluación ética del desarrollo de software.
+          Aplicación de pensamiento crítico para la resolución de problemas sociotécnicos en el ámbito de la ingeniería.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: Formación -->
+    <section id="formacion">
+      <h2 class="subtitle"><span class="icon">🎓</span> Formación</h2>
+
+      <div class="edu-item">
+        <p class="edu-period">2023 – Presente</p>
+        <p class="edu-degree">Ingeniero en Computación</p>
+        <p class="edu-inst">Escuela Superior Politécnica del Litoral (ESPOL)</p>
+      </div>
+
+      <div class="edu-item">
+        <p class="edu-period">2010 – 2023</p>
+        <p class="edu-degree">Bachillerato – Segundo Nivel</p>
+        <p class="edu-inst">Colegio Americano de Guayaquil</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: Idiomas -->
+    <section id="idiomas">
+      <h2 class="subtitle"><span class="icon">🌐</span> Idiomas</h2>
+      <div class="lang-list">
+        <div class="lang-item">
+          <p class="lang-name">Español</p>
+          <p class="lang-level">Nativo</p>
+        </div>
+        <div class="lang-item">
+          <p class="lang-name">Inglés</p>
+          <p class="lang-level">Nativo</p>
+        </div>
+        <div class="lang-item">
+          <p class="lang-name">Alemán</p>
+          <p class="lang-level">Básico</p>
+        </div>
+      </div>
+
+      <br />
+      <h3 style="margin-bottom:.7rem; font-size:.88rem; color:var(--gray); text-transform:uppercase; letter-spacing:.06em;">Comparativa de habilidades por idioma</h3>
       <table>
         <thead>
           <tr>
-            <th>Tecnología</th>
-            <th>Nivel</th>
-            <th>Años de uso</th>
+            <th>Idioma</th>
+            <th>Comprensión</th>
+            <th>Expresión oral</th>
+            <th>Escritura</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Java</td>
-            <td>Intermedio</td>
-            <td>2</td>
+            <td><strong>Español</strong></td>
+            <td>Nativa</td>
+            <td>Nativa</td>
+            <td>Nativa</td>
           </tr>
           <tr>
-            <td>MySQL</td>
-            <td>Intermedio</td>
-            <td>2</td>
+            <td><strong>Inglés</strong></td>
+            <td>Nativa</td>
+            <td>Nativa</td>
+            <td>Avanzada</td>
           </tr>
           <tr>
-            <td>Python</td>
-            <td>Básico</td>
-            <td>1</td>
+            <td><strong>Alemán</strong></td>
+            <td>Básica</td>
+            <td>Básica</td>
+            <td>Básica</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- Sección 5: Idiomas -->
-    <section id="idiomas">
-      <h2 class="subtitle">Idiomas</h2>
-      <ul>
-        <li>Español - Nativo</li>
-        <li>Inglés - Nativo</li>
-        <li>Alemán - Básico</li>
-      </ul>
+    <!-- SECCIÓN 6: Proyectos destacados -->
+    <section id="proyectos" class="full-width">
+      <h2 class="subtitle"><span class="icon">🚀</span> Proyectos Destacados</h2>
+
+      <div class="skills-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem;">
+
+        <div style="background:var(--light); border-radius:var(--radius); padding:1.2rem; border-top: 3px solid var(--gold);">
+          <h3>Sistema de Gestión con Estructuras de Datos</h3>
+          <p class="exp-role" style="margin-bottom:.5rem;">Java · NetBeans · POO</p>
+          <p style="font-size:.92rem; color:#374151;">
+            Implementación de listas enlazadas, pilas y colas para gestión eficiente de datos,
+            con algoritmos de búsqueda binaria y ordenamiento QuickSort.
+          </p>
+        </div>
+
+        <div style="background:var(--light); border-radius:var(--radius); padding:1.2rem; border-top: 3px solid var(--gold);">
+          <h3>Base de Datos Normalizada</h3>
+          <p class="exp-role" style="margin-bottom:.5rem;">MySQL · SQL · Modelado ER</p>
+          <p style="font-size:.92rem; color:#374151;">
+            Diseño e implementación de un esquema de base de datos en 3FN con procedimientos
+            almacenados y consultas optimizadas para reportes de negocio.
+          </p>
+        </div>
+
+        <div style="background:var(--light); border-radius:var(--radius); padding:1.2rem; border-top: 3px solid var(--gold);">
+          <h3>Prototipo de App Móvil</h3>
+          <p class="exp-role" style="margin-bottom:.5rem;">Android Studio · Figma · UX</p>
+          <p style="font-size:.92rem; color:#374151;">
+            Prototipado de alta fidelidad y desarrollo de una aplicación Android aplicando
+            principios de Interacción Humano-Computador para mejorar la usabilidad.
+          </p>
+        </div>
+
+        <div style="background:var(--light); border-radius:var(--radius); padding:1.2rem; border-top: 3px solid var(--gold);">
+          <h3>Administración de Urbanización</h3>
+          <p class="exp-role" style="margin-bottom:.5rem;">Java · Android Studio · POO · Archivos</p>
+          <p style="font-size:.92rem; color:#374151;">
+            Aplicación Android desarrollada con Programación Orientada a Objetos para la gestión
+            de una urbanización. Permite controlar el ingreso y salida de residentes, visitantes
+            y vehículos, administrar etapas, eventos y contactos, con persistencia de datos
+            mediante lectura y escritura de archivos de texto y manejo de hilos.
+          </p>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Sección 6: Proyectos -->
-    <section id="proyectos">
-      <h2 class="subtitle">Proyectos Destacados</h2>
+    <!-- SECCIÓN 7: Testimonios (etiquetas contenedoras - Guía 03) -->
+    <section id="testimonios" class="full-width">
+      <h2 class="subtitle"><span class="icon">💬</span> Testimonios</h2>
+      <div class="testimonials-grid">
 
-      <h3>Sistema de Gestión con Estructuras de Datos</h3>
-      <p>Java · NetBeans · POO</p>
-      <p>Implementación de listas enlazadas, pilas y colas para gestión eficiente de datos, con algoritmos de búsqueda binaria y ordenamiento QuickSort.</p>
+        <article class="testimonial">
+          <blockquote>
+            Pablo demostró una gran capacidad para resolver problemas complejos de algoritmos con una metodología clara y eficiente.
+          </blockquote>
+          <p class="testimonial-author">
+            <strong>Dr. Carlos Mendoza</strong>
+            Docente de Estructuras de Datos · ESPOL<br />
+            <span>Trabajé con Pablo durante el proyecto final de estructuras, donde demostró dominio de listas enlazadas y árboles binarios.</span>
+          </p>
+        </article>
 
-      <h3>Base de Datos Normalizada</h3>
-      <p>MySQL · SQL · Modelado ER</p>
-      <p>Diseño e implementación de un esquema de base de datos en 3FN con procedimientos almacenados y consultas optimizadas.</p>
+        <article class="testimonial">
+          <blockquote>
+            Su entendimiento de las bases de datos y la normalización fue fundamental para el éxito del proyecto académico.
+          </blockquote>
+          <p class="testimonial-author">
+            <strong>Ing. María Rodríguez</strong>
+            Docente de Bases de Datos · ESPOL<br />
+            <span>Pablo desarrolló un esquema relacional robusto y bien documentado que sirvió de referencia para otros equipos.</span>
+          </p>
+        </article>
 
-      <h3>Administración de Urbanización</h3>
-      <p>Java · Android Studio · POO · Archivos</p>
-      <p>Aplicación Android para la gestión de una urbanización. Permite controlar el ingreso y salida de residentes, visitantes y vehículos, con persistencia de datos en archivos de texto y manejo de hilos.</p>
+        <article class="testimonial">
+          <blockquote>
+            Pablo tiene una visión orientada al usuario que realmente se nota en la calidad de sus prototipos y diseños de interfaz.
+          </blockquote>
+          <p class="testimonial-author">
+            <strong>Lcdo. Andrés Torres</strong>
+            Docente de HCI y Diseño de Software · ESPOL<br />
+            <span>En el proyecto de prototipado, Pablo integró principios de usabilidad con criterio técnico, obteniendo resultados sobresalientes.</span>
+          </p>
+        </article>
+
+      </div>
     </section>
 
-    <!-- Sección 7: Testimonios (etiquetas contenedoras) -->
-    <section id="testimonios">
-      <h2 class="subtitle">Testimonios</h2>
+    <!-- SECCIÓN 8: Multimedia (mapa, imagen, video - Guía 03) -->
+    <section id="multimedia" class="full-width">
+      <h2 class="subtitle"><span class="icon">🎬</span> Multimedia</h2>
+      <div class="media-wrap">
 
-      <article>
-        <blockquote>Pablo demostró una gran capacidad para resolver problemas complejos de algoritmos con una metodología clara y eficiente.</blockquote>
-        <p><strong>Dr. Carlos Mendoza</strong> - Docente de Estructuras de Datos, ESPOL</p>
-        <p>Trabajé con Pablo durante el proyecto final de estructuras, donde demostró dominio de listas enlazadas y árboles binarios.</p>
-      </article>
+        <div class="media-item">
+          <h3>Ubicación – ESPOL, Guayaquil</h3>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.2!2d-79.9671!3d-2.1490!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dc7c7b1f5e5%3A0x3e36d6bc4a7b4c9a!2sESPOL!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+              title="Mapa de ESPOL en Guayaquil"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
 
-      <article>
-        <blockquote>Su entendimiento de las bases de datos y la normalización fue fundamental para el éxito del proyecto académico.</blockquote>
-        <p><strong>Ing. María Rodríguez</strong> - Docente de Bases de Datos, ESPOL</p>
-        <p>Pablo desarrolló un esquema relacional robusto y bien documentado que sirvió de referencia para otros equipos.</p>
-      </article>
+        <div class="media-item">
+          <h3>Imagen de referencia</h3>
+          <div class="profile-img-wrap">
+            <img
+              src="https://picsum.photos/seed/espol/600/220"
+              alt="Imagen representativa del campus universitario"
+            />
+          </div>
+        </div>
 
-      <article>
-        <blockquote>Pablo tiene una visión orientada al usuario que se nota en la calidad de sus prototipos y diseños de interfaz.</blockquote>
-        <p><strong>Lcdo. Andrés Torres</strong> - Docente de HCI y Diseño de Software, ESPOL</p>
-        <p>En el proyecto de prototipado, Pablo integró principios de usabilidad con criterio técnico, obteniendo resultados sobresalientes.</p>
-      </article>
+        <div class="media-item" style="grid-column: 1 / -1;">
+          <h3>Video – ¿Qué es la Ingeniería en Computación?</h3>
+          <div class="video-container">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/SzJ46YA_RaA"
+              title="¿Qué es la Ingeniería en Computación? - Video explicativo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Sección 8: Multimedia -->
-    <section id="multimedia">
-      <h2 class="subtitle">Multimedia</h2>
-
-      <h3>Ubicación - ESPOL, Guayaquil</h3>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.2!2d-79.9671!3d-2.1490!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dc7c7b1f5e5%3A0x3e36d6bc4a7b4c9a!2sESPOL!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
-        width="500"
-        height="300"
-        title="Mapa de ESPOL en Guayaquil"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-
-      <h3>Imagen</h3>
-      <img src="https://picsum.photos/seed/espol/600/250" alt="Imagen representativa del campus universitario" width="600" />
-
-      <h3>Video - ¿Qué es la Ingeniería en Computación?</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/SzJ46YA_RaA"
-        title="¿Qué es la Ingeniería en Computación?"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </section>
-
-    <!-- Sección 9: Contacto / Formulario -->
-    <section id="contacto">
-      <h2 class="subtitle">Contacto</h2>
-      <p>Si tienes alguna propuesta o quieres conectar, completa el formulario:</p>
+    <!-- SECCIÓN 9: Contacto / Formulario (Guía 03) -->
+    <section id="contacto" class="full-width">
+      <h2 class="subtitle"><span class="icon">✉️</span> Contacto</h2>
+      <p style="margin-bottom:1.5rem; color:var(--gray); font-size:.95rem;">
+        ¿Tienes una oportunidad, propuesta de colaboración o simplemente quieres conectar?
+        Completa el formulario y me pondré en contacto contigo pronto.
+      </p>
 
       <form action="#" method="post">
 
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+        </div>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="tu@email.com" />
+        <div class="form-group">
+          <label for="motivo">Motivo del contacto</label>
+          <select id="motivo" name="motivo">
+            <option value="" disabled selected>Selecciona una opción…</option>
+            <option value="trabajo">Oferta de trabajo / prácticas</option>
+            <option value="colaboracion">Colaboración en proyecto</option>
+            <option value="consultoria">Consultoría técnica</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
 
-        <label for="motivo">Motivo del contacto:</label>
-        <select id="motivo" name="motivo">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="trabajo">Oferta de trabajo / prácticas</option>
-          <option value="colaboracion">Colaboración en proyecto</option>
-          <option value="consultoria">Consultoría técnica</option>
-          <option value="otro">Otro</option>
-        </select>
+        <div class="form-group">
+          <label>Áreas de interés (selección única)</label>
+          <div class="radio-group">
+            <label><input type="radio" name="area" value="backend" /> Desarrollo Backend</label>
+            <label><input type="radio" name="area" value="frontend" /> Desarrollo Frontend / Web</label>
+            <label><input type="radio" name="area" value="movil" /> Desarrollo Móvil</label>
+            <label><input type="radio" name="area" value="datos" /> Bases de Datos / Datos</label>
+          </div>
+        </div>
 
-        <label>Área de interés:</label>
-        <input type="radio" name="area" value="backend" /> Desarrollo Backend
-        <input type="radio" name="area" value="frontend" /> Desarrollo Frontend
-        <input type="radio" name="area" value="movil" /> Desarrollo Móvil
-        <input type="radio" name="area" value="datos" /> Bases de Datos
+        <div class="form-group">
+          <label>Disponibilidad (selección múltiple)</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="disponibilidad" value="tiempo-completo" /> Tiempo completo</label>
+            <label><input type="checkbox" name="disponibilidad" value="medio-tiempo" /> Medio tiempo</label>
+            <label><input type="checkbox" name="disponibilidad" value="remoto" /> Trabajo remoto</label>
+            <label><input type="checkbox" name="disponibilidad" value="practicas" /> Prácticas preprofesionales</label>
+          </div>
+        </div>
 
-        <label>Disponibilidad:</label>
-        <input type="checkbox" name="disponibilidad" value="tiempo-completo" /> Tiempo completo
-        <input type="checkbox" name="disponibilidad" value="medio-tiempo" /> Medio tiempo
-        <input type="checkbox" name="disponibilidad" value="remoto" /> Trabajo remoto
-        <input type="checkbox" name="disponibilidad" value="practicas" /> Prácticas preprofesionales
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí…"></textarea>
+        </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
-
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar mensaje</button>
 
       </form>
     </section>
 
   </main>
 
-  <!-- Pie de página -->
+  <!-- ── PIE DE PÁGINA ── -->
   <footer>
-    <p>© 2025 Pablo Andrés Chacón Campoverde - Guayaquil, Ecuador</p>
-    <p>pachacon@espol.edu.ec</p>
+    <p>© 2025 <strong>Pablo Andrés Chacón Campoverde</strong> · Guayaquil, Ecuador</p>
+    <p style="margin-top:.3rem;">
+      <a href="mailto:pachacon@espol.edu.ec">pachacon@espol.edu.ec</a> ·
+      <a href="https://www.espol.edu.ec" target="_blank" rel="noopener noreferrer">ESPOL</a>
+    </p>
   </footer>
 
 </body>
