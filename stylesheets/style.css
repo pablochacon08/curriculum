@@ -405,3 +405,85 @@ footer strong { color: var(--gold2); }
   h1 { font-size: 1.7rem; }
   #photo { width: 25vw; }
 }
+
+/* ============================================================
+   GUÍA 05 - Flex
+   Selector hijo <ul> dentro de <nav>:
+   a. display: flex
+   b. justify-content: space-evenly (espacio equitativo)
+   c. flex-direction: row (fila horizontal izq a derecha)
+   d. align-items: center (centrado vertical eje transversal)
+   e. gap: 1rem (espacio uniforme entre elementos)
+   ============================================================ */
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ============================================================
+   GUÍA 05 - Grid
+   Selector <form> hijo de <section>:
+   a. display: grid
+   b. grid-template-columns: 1fr (una columna, todo el ancho)
+   c. row-gap y column-gap: 1rem por separado
+   ============================================================ */
+section > form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+/* Estilos para fieldset */
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .8rem 1rem;
+}
+fieldset legend {
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--navy2);
+  padding: 0 .4rem;
+}
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: .35rem;
+}
+
+/* ============================================================
+   GUÍA 05 - Flex vs Grid
+   Sección testimonios: h2 ocupa todo el ancho,
+   los 3 article ocupan el espacio equitativamente.
+   Implementado con GRID:
+   ============================================================ */
+#testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+#testimonios h2.subtitle {
+  grid-column: 1 / -1;
+}
+
+/* Versión equivalente con FLEX (comentada): */
+/*
+#testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#testimonios h2.subtitle {
+  flex: 0 0 100%;
+}
+#testimonios article {
+  flex: 1;
+}
+*/

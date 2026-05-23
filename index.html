@@ -368,52 +368,39 @@
 
       <form action="#" method="post">
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
-          </div>
-        </div>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
 
-        <div class="form-group">
-          <label for="motivo">Motivo del contacto</label>
-          <select id="motivo" name="motivo">
-            <option value="" disabled selected>Selecciona una opción…</option>
-            <option value="trabajo">Oferta de trabajo / prácticas</option>
-            <option value="colaboracion">Colaboración en proyecto</option>
-            <option value="consultoria">Consultoría técnica</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required />
 
-        <div class="form-group">
-          <label>Áreas de interés (selección única)</label>
-          <div class="radio-group">
-            <label><input type="radio" name="area" value="backend" /> Desarrollo Backend</label>
-            <label><input type="radio" name="area" value="frontend" /> Desarrollo Frontend / Web</label>
-            <label><input type="radio" name="area" value="movil" /> Desarrollo Móvil</label>
-            <label><input type="radio" name="area" value="datos" /> Bases de Datos / Datos</label>
-          </div>
-        </div>
+        <label for="motivo">Motivo del contacto</label>
+        <select id="motivo" name="motivo">
+          <option value="" disabled selected>Selecciona una opción…</option>
+          <option value="trabajo">Oferta de trabajo / prácticas</option>
+          <option value="colaboracion">Colaboración en proyecto</option>
+          <option value="consultoria">Consultoría técnica</option>
+          <option value="otro">Otro</option>
+        </select>
 
-        <div class="form-group">
-          <label>Disponibilidad (selección múltiple)</label>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="disponibilidad" value="tiempo-completo" /> Tiempo completo</label>
-            <label><input type="checkbox" name="disponibilidad" value="medio-tiempo" /> Medio tiempo</label>
-            <label><input type="checkbox" name="disponibilidad" value="remoto" /> Trabajo remoto</label>
-            <label><input type="checkbox" name="disponibilidad" value="practicas" /> Prácticas preprofesionales</label>
-          </div>
-        </div>
+        <fieldset>
+          <legend>Área de interés (selección única)</legend>
+          <label><input type="radio" name="area" value="backend" /> Desarrollo Backend</label>
+          <label><input type="radio" name="area" value="frontend" /> Desarrollo Frontend / Web</label>
+          <label><input type="radio" name="area" value="movil" /> Desarrollo Móvil</label>
+          <label><input type="radio" name="area" value="datos" /> Bases de Datos / Datos</label>
+        </fieldset>
 
-        <div class="form-group">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí…"></textarea>
-        </div>
+        <fieldset>
+          <legend>Disponibilidad (selección múltiple)</legend>
+          <label><input type="checkbox" name="disponibilidad" value="tiempo-completo" /> Tiempo completo</label>
+          <label><input type="checkbox" name="disponibilidad" value="medio-tiempo" /> Medio tiempo</label>
+          <label><input type="checkbox" name="disponibilidad" value="remoto" /> Trabajo remoto</label>
+          <label><input type="checkbox" name="disponibilidad" value="practicas" /> Prácticas preprofesionales</label>
+        </fieldset>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí…"></textarea>
 
         <button type="submit">Enviar mensaje</button>
 
