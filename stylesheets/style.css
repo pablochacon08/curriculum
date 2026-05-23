@@ -411,9 +411,9 @@ blockquote::before {
 .profile-img-wrap img {
   border-radius: var(--radius);
   border: 2px solid var(--border);
-  max-height: 220px;
+  max-height: none;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* ── Formulario ── */
