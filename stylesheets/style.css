@@ -255,11 +255,14 @@ h2 .icon { font-size: 1.1rem; }
 h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem; }
 
 .section-label {
-  font-size: .82rem;
-  color: var(--gray);
+  font-size: .85rem;
+  color: var(--navy);
   text-transform: uppercase;
-  letter-spacing: .06em;
-  margin: 1rem 0 .5rem;
+  letter-spacing: .08em;
+  margin: 1.2rem 0 .6rem;
+  font-weight: 700;
+  border-left: 4px solid var(--gold);
+  padding-left: .6rem;
 }
 
 /* Experiencia */
@@ -267,6 +270,16 @@ h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   border-left: 3px solid var(--gold);
+
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+.exp-item:hover {
+  transform: translateY(-4px);
+  background: var(--light);
+  box-shadow: 0 8px 24px rgba(13,27,42,.12);
 }
 
 .exp-item:last-child { margin-bottom: 0; }
@@ -292,7 +305,11 @@ h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem
 }
 
 .edu-item:last-child { margin-bottom: 0; }
-.edu-item:hover { transform: translateX(4px); background: var(--light); }
+.edu-item:hover { 
+  transform: translateX(4px); 
+  background: var(--light);
+  box-shadow: 0 8px 24px rgba(13,27,42,.12); 
+}
 .edu-degree { font-weight: 600; font-size: .97rem; }
 .edu-inst { font-size: .9rem; color: var(--gray); }
 .edu-period { font-size: .82rem; color: var(--gold); font-weight: 600; }
@@ -303,6 +320,27 @@ h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: .6rem;
   margin-bottom: 1rem;
+}
+
+.competencias-grid {
+  display: grid;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.competencia-card {
+  background: var(--light);
+  border-left: 3px solid var(--gold);
+  padding: .55rem .75rem;
+  border-radius: var(--radius);
+  font-size: .88rem;
+  color: #374151;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.competencia-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 18px rgba(13,27,42,.12);
 }
 
 .skill-tag {
@@ -324,14 +362,58 @@ h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem
   border-color: var(--navy);
 }
 
+.skills-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills-card {
+  background: var(--light);
+  border-left: 4px solid var(--gold);
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(13,27,42,.12);
+}
+
+.skills-title {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
 /* Idiomas */
 .lang-list { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
-.lang-item { text-align: center; }
+
+.lang-item { 
+  padding: .8rem 1rem;
+  border-radius: var(--radius);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.lang-item:hover {
+  transform: translateY(-4px);
+  background: var(--light);
+  box-shadow: 0 8px 24px rgba(13,27,42,.12);
+}
+
 .lang-name { font-weight: 700; font-size: .97rem; }
 .lang-level { font-size: .82rem; color: var(--gray); }
 
 /* Tabla */
-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: .5rem; }
+table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: .5rem; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+
+table:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(13,27,42,.12);
+}
 
 th {
   background: var(--navy);
@@ -567,4 +649,29 @@ footer strong { color: var(--gold2); }
   #testimonios { grid-template-columns: 1fr; }
   h1 { font-size: 1.5rem; }
   #photo { width: 25vw; }
+}
+
+.about-card {
+  background: var(--light);
+  border-left: 4px solid var(--gold);
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius);
+  margin-bottom: .8rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(13,27,42,.12);
+}
+
+.about-card p {
+  margin-bottom: .6rem;
+  font-size: .95rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
 }
