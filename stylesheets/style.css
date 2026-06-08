@@ -679,22 +679,3 @@ footer strong { color: var(--gold2); }
 .about-card p:last-child {
   margin-bottom: 0;
 }
-
-.skill-tag {
-  background: var(--white);
-  border: 1.5px solid var(--gold);
-  border-radius: 4px;
-  padding: .4rem .8rem;
-  font-size: .85rem;
-  font-weight: 600;
-  color: var(--navy2);
-  text-align: center;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: default;
-}
-
-.skill-tag:hover {
-  background: var(--navy);
-  color: var(--gold2);
-  border-color: var(--navy);
-}
