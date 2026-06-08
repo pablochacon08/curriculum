@@ -86,7 +86,7 @@ h1 {
 
 /* Texto del footer alineado a la derecha en itálica */
 footer p {
-  text-align: right;
+  text-align: center;
   font-style: italic;
 }
 
@@ -368,21 +368,23 @@ h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem
 }
 
 .skills-card {
-  background: var(--light);
-  border-left: 4px solid var(--gold);
-  padding: 1rem 1.2rem;
+  background: var(--white);
+  border-left: 3px solid var(--gold);
+  padding: 1rem;
   border-radius: var(--radius);
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .skills-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(13,27,42,.12);
+  transform: translateY(-4px);
+  background: var(--light);
+  box-shadow: 0 8px 24px rgba(13,27,42,.12);
 }
 
 .skills-title {
-  font-size: .9rem;
+  font-size: .85rem;
   font-weight: 700;
+  font-family: var(--font-body);
   color: var(--navy);
   margin-bottom: .7rem;
   text-transform: uppercase;
@@ -652,26 +654,47 @@ footer strong { color: var(--gold2); }
 }
 
 .about-card {
-  background: var(--light);
-  border-left: 4px solid var(--gold);
-  padding: 1rem 1.2rem;
+  background: var(--white);
+  border-left: 3px solid var(--gold);
+  padding: 1rem;
   border-radius: var(--radius);
   margin-bottom: .8rem;
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .about-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(13,27,42,.12);
+  transform: translateY(-4px);
+  background: var(--light);
+  box-shadow: 0 8px 24px rgba(13,27,42,.12);
 }
 
 .about-card p {
   margin-bottom: .6rem;
   font-size: .95rem;
-  color: #374151;
+  font-family: var(--font-body);
+  color: var(--navy);
   line-height: 1.6;
 }
 
 .about-card p:last-child {
   margin-bottom: 0;
+}
+
+.skill-tag {
+  background: var(--white);
+  border: 1.5px solid var(--gold);
+  border-radius: 4px;
+  padding: .4rem .8rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--navy2);
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--navy);
+  color: var(--gold2);
+  border-color: var(--navy);
 }
