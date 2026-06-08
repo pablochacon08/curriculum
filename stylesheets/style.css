@@ -242,6 +242,7 @@ header::after {
 
 /* Layout principal con grid de 2 columnas */
 main {
+  align-items: start;
   max-width: 1100px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
